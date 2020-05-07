@@ -19,7 +19,7 @@ function updateExamples() {
             })
         }    
         if (clipText.indexOf('https://github.com/')==0) {
-            // drive url
+            // github url
             document.querySelectorAll('code').forEach(($e) => {
                 $e.innerHTML=$e.innerHTML.replace('(github user name)', clipText.split('/')[3]);
                 $e.innerHTML=$e.innerHTML.replace('(github repo name)', clipText.split('/')[4]);
